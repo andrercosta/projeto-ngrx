@@ -1,0 +1,21 @@
+<form id="myForm" [formGroup]="formCadastro" (ngSubmit)="addUsuario()">
+    <div class="col-6">
+        <label for="id">Id</label>
+        <input id="id" name="id" formControlName="id" class="form-control" type="text"/>
+    </div>
+    <div class="col-6">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome"  formControlName="nome" class="form-control" type="text"/>
+    </div>
+    <div class="col-6">
+        <label for="idade">Idade</label>
+        <input id="idade" name="idade"  formControlName="idade" class="form-control" type="text"/>
+    </div>
+    <div class="col-6">
+        <label for="perfil">Perfil</label>
+        <input id="perfil" name="perfil"  formControlName="perfil" class="form-control" type="text"/>
+    </div>
+    <div class="col-6">
+       <button class="btn btn-primary" type="submit">Adicionar</button>
+    </div>
+</form>
